@@ -1,4 +1,4 @@
-scanner = dependency('wayland-scanner')
+scanner = dependency('wayland-scanner', native: true)
 prog_scanner = find_program(scanner.get_variable('wayland_scanner'))
 
 protocol_names = [
