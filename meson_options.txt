@@ -4,3 +4,9 @@ option(
   type: 'boolean',
   value: 'true',
 )
+option(
+  'tests',
+  description: 'Compile tests',
+  type: 'boolean',
+  value: 'true'
+)

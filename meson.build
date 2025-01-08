@@ -26,4 +26,8 @@ wayland_server_dep = dependency('wayland-server')
 pkgconfig = import('pkgconfig')
 
 subdir('protocol')
-subdir('tests')
+
+if get_option('tests')
+  subdir('tests')
+endif
+
